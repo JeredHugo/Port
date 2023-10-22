@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio | Ryzha Mae Escote | Sample</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="AboutPage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-
-.loader {
+        .loader {
   position: fixed;
   top: 0;
   left: 0;
@@ -34,7 +33,7 @@
   border: 15px solid #dddddd;
   border-top-color: #009578;
   border-radius: 50%;
-  animation: loading 1s ease infinite;
+  animation: loading 0.75s ease infinite;
 }
 
 @keyframes loading {
@@ -45,6 +44,9 @@
     transform: rotate(1turn);
   }
 }
+
+
+        
         @media only screen and (max-width: 820px) {
             .logo span{
         font-size: 15px;
@@ -177,26 +179,43 @@
     width: auto;
     margin-top: -15px;
     padding: 10px;
+    color: var(--color-black);
     font-weight: bold;
     font-size: 25px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
   }
+
+  /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev {
+    left: 0; /* Adjust the left position for the 'prev' button */
+  }
+
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: var(--color-primary);
+  }
+
+          
         }
     </style>
-    <script>
-        window.addEventListener("load", () => {
-  const loader = document.querySelector(".loader");
-
-  loader.classList.add("loader--hidden");
-
-  loader.addEventListener("transitionend", () => {
-    document.body.removeChild(loader);
-  });
-});
-    </script>
-
+    <script>window.addEventListener("load", () => {
+        const loader = document.querySelector(".loader");
+      
+        loader.classList.add("loader--hidden");
+      
+        loader.addEventListener("transitionend", () => {
+          document.body.removeChild(loader);
+        });
+      });
+      </script>
 </head>
 
 <body>
@@ -205,9 +224,8 @@
         <div class="container nav-container">
             <a href="#" class="logo">Ryzha Mae<span> Escote</span></a>
             <ul class="nav-links">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="AboutPage.html">About </a></li>
-                
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#"class="active">About </a></li>
             </ul>          
         </div>
     </nav>
@@ -215,12 +233,12 @@
     <header>
         <div class="container header-container">
             <div class="header-left">
-                <h1>Civil <span>Engineer</span></h1>
-                <h3>Hi, I am Ryzha</h3>
-                <p align="justify">Welcome to my Civil Engineering portfolio, where I invite you to explore my journey through the world of infrastructure, construction, and problem-solving. As a passionate and dedicated Civil Engineer, I have been fortunate to work on a wide array of projects, each contributing to my growth and knowledge in this dynamic field.</p>
-                <a href="Resume-Escote-Ryzha-Mae.pdf" download="Ryzha Mae Escote CV.pdf" class="btn">Download CV</a>
-                <a href="AboutPage.html"class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a href="AboutPage.html"class="next" onclick="plusSlides(1)">&#10095;</a>
+                <h1><span>About Me</span></h1>
+                <p align="justify">I am a dedicated and highly motivated Civil Engineer with a passion for designing and implementing innovative solutions in the field of civil infrastructure. My educational background and practical experience have equipped me with a solid foundation in engineering principles, project management, and a strong commitment to ensuring the safety, sustainability, and functionality of structures.</p>
+                <h1>Education<span></span></h1>
+                <p align="justify">I hold a Bachelors Degree in Civil Engineering from Sorsogon State University, where I gained a strong theoretical foundation in structural analysis, geotechnical engineering, and transportation systems. I consistently demonstrated academic excellence and an ability to apply engineering concepts to real-world challenges.</p>
+                <a href="index.html" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a href="index.html"class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
             <div class="header-right">
                  <div class ="circle">
@@ -230,7 +248,7 @@
                     <a href="https://web.telegram.org/k/#@Waysami"><i class="fa fa-telegram"></i></a>
                  </div>
                  <div class="hero-image">
-                    <img src="mybebeko.png">
+                    <img src="shesh.png">
                     </div>
                     </div>
                  </div> 

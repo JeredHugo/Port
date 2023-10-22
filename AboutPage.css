@@ -181,7 +181,7 @@ header{
     width: 28rem;
     background-color: var(--color-white);
     border-radius: 50%;
-    border: 1px solid var(--color-primary);
+    border: 1px solid var(--color-dark);
     position: relative;
     animation: anim linear infinite 40s;
 }
@@ -196,7 +196,7 @@ header{
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    background-color: var(--color-primary);
+    background-color: var(--color-dark);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -241,48 +241,6 @@ header{
     background-color: var(--color-primary);
 }
 
-.slider-nav {
-	display: flex;
-	column-gap: 2rem;
-	position: absolute;
-	bottom: -2.2rem;
-	left: 50%;
-	transform: translateX(-50%);
-	z-index: 1;
-}
-
-.slider-nav a {
-	width: 1.0rem;
-	height: 1.0rem;
-	border-radius: 50%;
-	background-color: var(--color-dark);
-	opacity: 0.75;
-	transition: opacity ease 250ms;
-}
-
-.slider-nav a:hover {
-	opacity: 1;
-}
-
-.slider-link.animated {
-    transform: scale(1.2);
-    transition: transform 0.3s;
-  }
-  
-  .slider-link:hover {
-    transform: scale(1.2);
-    opacity: 1;
-  }
-  
-  .slider-link:active {
-    transform: scale(1);
-    opacity: 0.75;
-  }
-  
-
- 
-
-
 /* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
@@ -314,8 +272,6 @@ header{
   .prev:hover, .next:hover {
     background-color: var(--color-primary);
   }
-
-  
   
 
 
