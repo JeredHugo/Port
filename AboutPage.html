@@ -19,6 +19,7 @@
   justify-content: center;
   background: black;
   transition: opacity 1s, visibility 1s;
+  z-index: 9999999;
 }
 
 .loader--hidden {
@@ -209,12 +210,15 @@
     <script>window.addEventListener("load", () => {
         const loader = document.querySelector(".loader");
       
-        loader.classList.add("loader--hidden");
+        setTimeout(() => {
+          loader.classList.add("loader--hidden");
       
-        loader.addEventListener("transitionend", () => {
-          document.body.removeChild(loader);
-        });
+          loader.addEventListener("transitionend", () => {
+            document.body.removeChild(loader);
+          });
+        }, 1000);
       });
+      
       </script>
 </head>
 
